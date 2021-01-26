@@ -13,16 +13,35 @@ body, p {
     font: 400 0.875rem/1.375rem "Raleway", sans-serif;
 }
 
-.p-large {
-    font: 400 1rem/1.5rem "Raleway", sans-serif;
+
+h1 {
+	color: #393939;
+	font: 700 3rem/3.5rem "Raleway", sans-serif;
 }
 
-.p-small {
-    font: 400 0.75rem/1.25rem "Raleway", sans-serif;
+h2 {
+	color: #393939;
+	font: 700 2.25rem/2.75rem "Raleway", sans-serif;
 }
 
-.p-heading {
-    margin-bottom: 3.875rem;
+h3 {
+	color: #393939;
+	font: 700 1.75rem/2rem "Raleway", sans-serif;
+}
+
+h4 {
+	color: #393939;
+	font: 700 1.375rem/1.875rem "Raleway", sans-serif;
+}
+
+h5 {
+	color: #393939;
+	font: 700 1.125rem/1.625rem "Raleway", sans-serif;
+}
+
+h6 {
+	color: #393939;
+	font: 700 1rem/1.5rem "Raleway", sans-serif;
 }
 
 /* Header */
@@ -139,8 +158,11 @@ a {
     font-size: 1rem;
     line-height: 1.5rem;
     text-align: center;
-}
 
+}
+.gmap{
+    padding-top: 5.95rem;
+}
 .form-2 .list-unstyled .fas,
 .form-2 .list-unstyled .fab {
     margin-right: 0.5rem;
@@ -148,17 +170,28 @@ a {
     color: #00bfd8;
 }
 .phone{
-    margin-right: 14%;
+    margin-right: 7.5rem;
 }
-.envelope
-{
-margin-right: 9.8%;
+.envelope{
+    margin-right: 6rem;
 }
 .form-2 .list-unstyled .fa-phone {
     vertical-align: 3%;
 }
-
-.map-responsive{
+  .map-responsive {
+        position: relative;
+        padding-bottom: 55%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+    }
+    .map-responsive iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+/*.map-responsive{
     overflow:hidden;
     padding-bottom:56%;
     position:relative;
@@ -170,7 +203,7 @@ margin-right: 9.8%;
     height:50vh;
     width:100%;
     position:absolute;
-}
+}*/
 /* Footer */
 /***********************/
 footer {
@@ -182,3 +215,60 @@ footer {
 .crct{
     height: 45%;
 }
+/*swiper */
+.slider-2 {
+	padding-top: 7.5rem;
+	padding-bottom: 7rem;
+	/* background: url('./img/testimonials-background.jpg') center center no-repeat; */
+    background-size: cover; 
+   
+}
+.swiper-container {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  /* Fix of Webkit flickering */
+  z-index: 1;
+}
+.swiper-container-vertical > .swiper-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+  }
+  .swiper-slide {
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+  /* --------------------- */
+  /*+,- button*/
+  
+
